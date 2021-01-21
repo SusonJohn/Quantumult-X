@@ -76,7 +76,8 @@ async function getCoin() {
         let appid = 'crazy_joy'
         let functionId = 'crazyJoy_event_obtainAward'
         console.log(JD_API + '?body=' + body + '&appid=' + appid + '&functionId='+ functionId)
-        $.get({url:JD_API + '?body=' + body + '&appid=' + appid + '&functionId='+ functionId ,dataType:'JSONP',}, (err, resp, data) => {
+        $.get({url:JD_API + '?body=' + body + '&appid=' + appid + '&functionId='+ functionId ,headers:{
+                "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 Edg/87.0.4280.88"}, (err, resp, data) => {
             try {
                 if (err) {
                     console.log(`${JSON.stringify(err)}`)
