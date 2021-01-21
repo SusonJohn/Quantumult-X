@@ -64,7 +64,7 @@ const JD_API = `https://api.m.jd.com`;
                 continue
             }
             console.log(`\n******开始【京东账号${$.index}】${$.nickName || $.UserName}*********\n`);
-            await collectProduceScore()
+            await getCoin()
         }
     }
 })()
