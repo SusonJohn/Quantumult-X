@@ -44,6 +44,8 @@ if ($.isNode()) {
 let UserName = '';
 const JD_API = `https://api.m.jd.com`;
 !(async () => {
+    let body = {"eventType":"HOUR_BENEFIT"}
+    console.log(taskGetUrl('crazyJoy_event_obtainAward', body))
     if (!cookiesArr[0]) {
         $.msg($.name, '【提示】请先获取cookie\n直接使用NobyDa的京东签到获取', 'https://bean.m.jd.com/bean/signIndex.action', {"open-url": "https://bean.m.jd.com/bean/signIndex.action"});
         return;
@@ -73,17 +75,19 @@ async function getCoin() {
     return new Promise((resolve) => {
         //'https://api.m.jd.com/?body=%7B%22eventType%22%3A%22HOUR_BENEFIT%22%7D&appid=crazy_joy&functionId=crazyJoy_event_obtainAward'
 
-        // let body = {"eventType":"HOUR_BENEFIT"}
+        let body = {"eventType":"HOUR_BENEFIT"}
         // let appid = 'crazy_joy'
-        // let functionId = 'crazyJoy_event_obtainAward'
-        $.get(taskGetUrl('crazyJoy_event_obtainAward', body), (err, resp, data) => {
+         let functionId = 'crazyJoy_event_obtainAward'
+        $.get(taskGetUrl(functionId, body), (err, resp, data) => {
             try {
                 if (err) {
                     console.log(`${JSON.stringify(err)}`)
                     console.log(`${$.name} API请求失败，请检查网路重试`)
                 } else {
                     if (data) {
+                        console.log(data)
                         data = JSON.parse(data);
+                        console.log(data)
                         if (data && data.resultCode === 0) {
                             console.log(`京东账号${$.index} ${$.nickName}成功收集金币:${data.data.coins}个`)
                         } else {
@@ -146,14 +150,14 @@ function TotalBean() {
 }
 function taskGetUrl(function_id, body) {
     return {
-        url: `${JD_API_HOST}?functionId=${function_id}&body=${escape(JSON.stringify(body))}&appid=crazy_joy`,
+        url: `${JD_API}?body=${escape(JSON.stringify(body))}&functionId=crazyJoy_event_obtainAward&appid=crazy_joy`,
         headers: {
             'Cookie': cookie,
             'Host': 'api.m.jd.com',
             'Accept': '*/*',
             'Connection': 'keep-alive',
             'User-Agent': $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : (require('./USER_AGENTS').USER_AGENT)) : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0"),
-            'Accept-Language': 'zh-Hans-CN;q=1,en-CN;q=0.9',
+            'Accept-Language': 'zh-cn',
             'Accept-Encoding': 'gzip, deflate, br',
             'Content-Type': "application/x-www-form-urlencoded"
         }
