@@ -44,8 +44,6 @@ if ($.isNode()) {
 let UserName = '';
 const JD_API = `https://api.m.jd.com`;
 !(async () => {
-    let body = {"eventType": "HOUR_BENEFIT"}
-    console.log(taskGetUrl('crazyJoy_event_obtainAward', body))
     if (!cookiesArr[0]) {
         $.msg($.name, '【提示】请先获取cookie\n直接使用NobyDa的京东签到获取', 'https://bean.m.jd.com/bean/signIndex.action', {"open-url": "https://bean.m.jd.com/bean/signIndex.action"});
         return;
@@ -77,8 +75,8 @@ async function getCoin() {
 
         let body = {"eventType": "HOUR_BENEFIT"}
         let appid = 'crazy_joy'
-        let functionId = 'crazyJoy_event_obtainAward'
-        $.get(JD_API, {body: escape(JSON.stringify(body)), appid: appid, functionId: functionId}, (err, resp, data) => {
+        let functionId = 'crazyJoyEventObtainAward'
+        $.get(taskGetUrl(functionId, body), (err, resp, data) => {
                 try {
                     if (err) {
                         console.log(`${JSON.stringify(err)}`)
@@ -87,7 +85,6 @@ async function getCoin() {
                         if (data) {
                             console.log(data)
                             data = JSON.parse(data);
-                            console.log(data)
                             if (data && data.resultCode === 0) {
                                 console.log(`京东账号${$.index} ${$.nickName}成功收集金币:${data.data.coins}个`)
                             } else {
