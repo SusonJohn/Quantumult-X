@@ -71,11 +71,9 @@ const JD_API = `https://api.m.jd.com`;
 
 async function getCoin() {
     return new Promise((resolve) => {
-        //'https://api.m.jd.com/?body=%7B%22eventType%22%3A%22HOUR_BENEFIT%22%7D&appid=crazy_joy&functionId=crazyJoy_event_obtainAward'
-
         let body = {"eventType": "HOUR_BENEFIT"}
         let appid = 'crazy_joy'
-        let functionId = 'crazyJoyEventObtainAward'
+        let functionId = 'crazyJoy_event_obtainAward'
         $.get(taskGetUrl(functionId, body), (err, resp, data) => {
                 try {
                     if (err) {
@@ -88,7 +86,7 @@ async function getCoin() {
                             if (data && data.resultCode === 0) {
                                 console.log(`京东账号${$.index} ${$.nickName}成功收集金币:${data.data.coins}个`)
                             } else {
-                                console.log(`京东账号${$.index} ${$.nickName}成功收集金币:${data.message}`)
+                                console.log(`京东账号${$.index} ${$.nickName}错误:${data.message}`)
                             }
                         } else {
                             console.log(`请检查自身设备原因`);
@@ -151,7 +149,8 @@ function TotalBean() {
 
 function taskGetUrl(function_id, body) {
     return {
-        url: `${JD_API}?body=${escape(JSON.stringify(body))}&appid=crazy_joy&functionId=${function_id}`,
+        url:'https://api.m.jd.com/?body=%7B%22eventType%22%3A%22HOUR_BENEFIT%22%7D&appid=crazy_joy&functionId=crazyJoy_event_obtainAward'
+        // url: `${JD_API}?body=${escape(JSON.stringify(body))}&appid=crazy_joy&functionId=${function_id}`,
         headers: {
             'Cookie': cookie,
             'Host': 'api.m.jd.com',
