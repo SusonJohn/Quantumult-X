@@ -78,7 +78,6 @@ async function getCoin() {
                         console.log(`${$.name} API请求失败，请检查网路重试`)
                     } else {
                         if (data) {
-                            console.log(data)
                             data = JSON.parse(data);
                             if (data && data.resultCode === 0) {
                                 console.log(`京东账号${$.index} ${$.nickName}成功收集金币:${data.data.coins}个`)
