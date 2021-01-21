@@ -79,7 +79,7 @@ async function getCoin() {
                     } else {
                         if (data) {
                             data = JSON.parse(data);
-                            if (data && data.resultCode === 0) {
+                            if (data && data.resultCode == 0) {
                                 console.log(`京东账号${$.index} ${$.nickName}成功收集金币:${data.data.coins}个`)
                             } else {
                                 console.log(`京东账号${$.index} ${$.nickName}--错误:${data.resultCode}:${data.message}`)
