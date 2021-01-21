@@ -20,8 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2edaf840-d748-4db6-b06f-b930afda62fb" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Script/jd_nianCollect.js" beforeDir="false" afterPath="$PROJECT_DIR$/Script/jd_crazyJoyCollect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Script/jd_crazyJoyCollect.js" beforeDir="false" afterPath="$PROJECT_DIR$/Script/jd_crazyJoyCollect.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +75,7 @@
       <updated>1610699476868</updated>
       <workItem from="1610699477947" duration="4983000" />
       <workItem from="1610934293599" duration="3036000" />
-      <workItem from="1611195235224" duration="19818000" />
+      <workItem from="1611195235224" duration="20184000" />
     </task>
     <servers />
   </component>

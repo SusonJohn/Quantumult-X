@@ -3,7 +3,7 @@
  */
 //此处填写京东账号cookie。
 let CookieJDs = [
-    'jdapp;iPhone;9.3.5;13.5;a7f6c0292eb84e6391f389397564b27fd8714827;network/wifi;ADID/12942785-ACDD-4155-95CC-8E5589667FDA;supportApplePay/0;hasUPPay/0;hasOCPay/0;model/iPhone11,6;addressid/1495032006;supportBestPay/0;appBuild/167515;jdSupportDarkMode/0;pv/95.163;apprpd/MyJD_Main;ref/https://linggame.jd.com/babelDiy/Zeus/heA49fhvyw9UakaaS3UUJRL7v3o/index.html?lng=114.269131&lat=30.594183&sid=ba984999bc288cf8d7ab0c0e21b0224w&un_area=17_1381_3582_52797;psq/1;ads/;psn/a7f6c0292eb84e6391f389397564b27fd8714827|228;jdv/0|direct|-|none|-|1610693169331|1611199623;adk/;app_device/IOS;pap/JA2015_311210|9.3.5|IOS 13.5;Mozilla/5.0 (iPhone; CPU iPhone OS 13_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/',//账号一ck,例:pt_key=XXX;pt_pin=XXX;
+    '',//账号一ck,例:pt_key=XXX;pt_pin=XXX;
     '',//账号二ck,例:pt_key=XXX;pt_pin=XXX;如有更多,依次类推
 ]
 // 判断环境变量里面是否有京东ck
