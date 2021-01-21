@@ -71,13 +71,12 @@ const JD_API = `https://api.m.jd.com`;
 
 async function getCoin() {
     return new Promise((resolve) => {
-        //https://api.m.jd.com/?body=%7B%22eventType%22%3A%22HOUR_BENEFIT%22%7D&appid=crazy_joy&functionId=crazyJoy_event_obtainAward
-        let body = '%7B%22eventType%22%3A%22HOUR_BENEFIT%22%7D'
-        let appid = 'crazy_joy'
-        let functionId = 'crazyJoy_event_obtainAward'
-        console.log(JD_API + '?body=' + body + '&appid=' + appid + '&functionId='+ functionId)
-        $.get({url:JD_API + '?body=' + body + '&appid=' + appid + '&functionId='+ functionId ,headers:{
-                "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 Edg/87.0.4280.88"}, (err, resp, data) => {
+        //'https://api.m.jd.com/?body=%7B%22eventType%22%3A%22HOUR_BENEFIT%22%7D&appid=crazy_joy&functionId=crazyJoy_event_obtainAward'
+
+        // let body = {"eventType":"HOUR_BENEFIT"}
+        // let appid = 'crazy_joy'
+        // let functionId = 'crazyJoy_event_obtainAward'
+        $.get(taskGetUrl('crazyJoy_event_obtainAward', body), (err, resp, data) => {
             try {
                 if (err) {
                     console.log(`${JSON.stringify(err)}`)
@@ -144,6 +143,21 @@ function TotalBean() {
             }
         })
     })
+}
+function taskGetUrl(function_id, body) {
+    return {
+        url: `${JD_API_HOST}?functionId=${function_id}&body=${escape(JSON.stringify(body))}&appid=crazy_joy`,
+        headers: {
+            'Cookie': cookie,
+            'Host': 'api.m.jd.com',
+            'Accept': '*/*',
+            'Connection': 'keep-alive',
+            'User-Agent': $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : (require('./USER_AGENTS').USER_AGENT)) : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0"),
+            'Accept-Language': 'zh-Hans-CN;q=1,en-CN;q=0.9',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Content-Type': "application/x-www-form-urlencoded"
+        }
+    }
 }
 function jsonParse(str) {
     if (typeof str == "string") {
