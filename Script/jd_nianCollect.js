@@ -19,9 +19,7 @@ cron "20 * * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scrip
 京东收🧨 = type=cron,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nianCollect.js, cronexpr="20 * * * *", timeout=3600, enable=true
  */
 
-/*
-__jd_ref_cls=MCrazyJoy_Home_GetCoin; mba_muid=1607589404108724961525.95.1611199849071; mba_sid=95.164; unpl=V2_ZzNtbRJTS0ImXRQGLk0PVmIERVxLV0cTcAgSUi8QVAFkBRJZclRCFnUUR1RnGlwUZwIZXEBcRxFFOEZVehlZA2ULFF5yU0UWdA5HXH0pbAZnMxNtQlBCE3EBTlF6HFwEbgURWEpQQxF2DHZkexFbNWEAE19BUEITcQ9DZEseWQZhCyJccldKHXYMQFR4GFg1Jm0XW0pVRFh1D0dSfxBUAGYGElxLUUAQfQ9GUHgdbARXAA%3d%3d|ADC_T320IotrvPHSzo%2bAebatzDeTGf6jj4sHgpGzM58Kis1U9OyyGUoY%2f7gaA9v5SCIDxZVMp51MEPi%2fa%2fnrpNkRMf7FpawstgYnPyd5b%2f2k3YmusvhcCc%2bIyGAuOHxpfY7mgUbuB1NKZkXC%2f9m7FGk9nphjn3o5HxLlA5%2bPF%2fD9%2fHZ8mjhlXrinmM0qqmzFnLqrOkMIf%2f3aXDtsiqzDrt3gf3h30cHdtNW%2bK45AgMAstup9t63nQT6j740WFfhTt%2bfRtclem2fO%2fofa4V%2fJWDmR7kcMHoeDd40mAU4SZd2jsWqGdtWg%2fY2kGD7u1gEn%2bKfyKVfsqMDNnJn43STDuL4PkSch5AvoPuxHFcvegymhw8xue5e%2b7I2Ej8ytVxKDzRSJOhH9r7lP9ezjHZPifg8t5SJLSvLR4K2%2bJ7%2bqmjdUe5V%2b5deDLUkMJ6BpYZ9b4W6AbfkEB8qjjG5hpqA8d5yAEB2tPoQJuV5dnMNtDR2H8bAVZZKiARnxQLeJE73CfffIIrWa8L1m%2b6cdFa3bo9Hw2cDjvIByeMfopcdg0pn3zN2CwfIxSXCg7lFZAuDXSW%2bNMSoyeDJ3sraGQSNeRL65Fw%3d%3d; __jda=122270672.1607589404108724961525.1607589404.1611193051.1611199445.94; __jdb=122270672.4.1607589404108724961525|94.1611199445; __jdc=122270672; __jdv=122270672|direct|-|none|-|1610693169331; pre_seq=1; pre_session=a7f6c0292eb84e6391f389397564b27fd8714827|228; pt_key=app_openAAJgA7T6ADAJbSuMnbZ9z3pUVMwKheLwhnEkmmRQPnLfsuOYEuGHUKlgxX3Lh5H881roblD0tqA; pt_pin=徐其阳; pwdt_id=徐其阳; sid=ba984999bc288cf8d7ab0c0e21b0224w; RT="z=1&dm=jd.com&si=h02lszlxjhd&ss=kk6ajs0t&sl=2&tt=48a&ld=3wwr"; wxa_level=1; 3AB9D23F7A4B3C9B=GTZVX6YBASAKAAS5ALLMVZC2GLGM3KQN7E26Q3UUAUWLQDBB3HZSZ6ZYV3CG6GFDJG2TZHJVVE2PM4AYVSGKROXHTU; BATQW722QTLYVCRD={"tk":"jdd01TM5SJKU5FSD43AEJZSEER5A6YI567GQ2F4M6G2LANHPDIU4HDH2QOZC6ALTFV4ZN3NSOWSYMGJFOS45U5QKDPVO5PMA2ES5BWRB7UZY01234567","t":1611196250868}; PPRD_P=CT.138920.18.149-UUID.1607589404108724961525; jxsid_s_t=1611193359270; jxsid_s_u=https://wqs.jd.com/fortune_island/index.html; shshshfp=636060d633addddbe1a39bebfae5cff3; shshshfpa=5aac3c2d-63f6-db88-51ee-90877f609fc1-1608028718; shshshfpb=xS4OzA4smpxoO0qQf2Z3XHw==; __wga=1611193357137.1611193357137.1610902887126.1608028718466.1.9; deviceName=JDAPP; deviceOS=ios; deviceOSVersion=13.5; deviceVersion=0; equipmentId=GTZVX6YBASAKAAS5ALLMVZC2GLGM3KQN7E26Q3UUAUWLQDBB3HZSZ6ZYV3CG6GFDJG2TZHJVVE2PM4AYVSGKROXHTU; fingerprint=248652232af46ee8c7d5a4228013f3ea; cid=8; retina=1; jxsid=16111471981738064486; __jdu=1607589404108724961525; areaId=17; sc_width=414; visitkey=54672094373943056; webp=0
-*/
+
 
 const $ = new Env('京东CazyJoy领币');
 //Node.js用户请在jdCookie.js处填写京东ck;
@@ -73,11 +71,12 @@ const JD_API = `https://api.m.jd.com`;
 
 async function getCoin() {
     return new Promise((resolve) => {
-        let body = '{"eventType":"HOUR_BENEFIT"}'
+        //https://api.m.jd.com/?body=%7B%22eventType%22%3A%22HOUR_BENEFIT%22%7D&appid=crazy_joy&functionId=crazyJoy_event_obtainAward
+        let body = '%7B%22eventType%22%3A%22HOUR_BENEFIT%22%7D'
         let appid = 'crazy_joy'
-        let functionId = 'crazyJoy_event_obtaimAward'
+        let functionId = 'crazyJoy_event_obtainAward'
         console.log(JD_API + '?body=' + body + '&appid=' + appid + '&functionId='+ functionId)
-        $.get({url:JD_API + '?body=' + body + '&appid=' + appid + '&functionId='+ functionId }, (err, resp, data) => {
+        $.get({url:JD_API + '?body=' + body + '&appid=' + appid + '&functionId='+ functionId ,dataType:'JSONP',}, (err, resp, data) => {
             try {
                 if (err) {
                     console.log(`${JSON.stringify(err)}`)
