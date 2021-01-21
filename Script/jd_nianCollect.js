@@ -152,6 +152,7 @@ function TotalBean() {
 function taskGetUrl(function_id, body) {
     return {
         url: `${JD_API}?body=${escape(JSON.stringify(body))}&appid=crazy_joy&functionId=${function_id}`,
+        data: {"functionId": ${function_id}},
         headers: {
             'Cookie': cookie,
             'Host': 'api.m.jd.com',
