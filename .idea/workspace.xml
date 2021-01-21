@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2edaf840-d748-4db6-b06f-b930afda62fb" name="默认的" comment="" />
+    <list default="true" id="2edaf840-d748-4db6-b06f-b930afda62fb" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/Script/jd_nianCollect.js" beforeDir="false" afterPath="$PROJECT_DIR$/Script/jd_nianCollect.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,12 +56,12 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="jd_nianCollect.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Script/jd_nianCollect.js" working-dir="$PROJECT_DIR$/Script">
+    <configuration name="jd_crazyJoyCollect.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Script/jd_crazyJoyCollect.js" working-dir="$PROJECT_DIR$/Script">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.jd_nianCollect.js" />
+        <item itemvalue="Node.js.jd_crazyJoyCollect.js" />
       </list>
     </recent_temporary>
   </component>
@@ -73,7 +75,7 @@
       <updated>1610699476868</updated>
       <workItem from="1610699477947" duration="4983000" />
       <workItem from="1610934293599" duration="3036000" />
-      <workItem from="1611195235224" duration="18619000" />
+      <workItem from="1611195235224" duration="19384000" />
     </task>
     <servers />
   </component>
@@ -97,22 +99,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1610699552854" />
-    <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1611218471862">
+    <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1611220317065">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1611218471862" />
-    <state width="1899" height="285" key="GridCell.Tab.0.center" timestamp="1611218471862">
+    <state width="1899" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1611220317065" />
+    <state width="1899" height="285" key="GridCell.Tab.0.center" timestamp="1611220317065">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1611218471862" />
-    <state width="1899" height="285" key="GridCell.Tab.0.left" timestamp="1611218471861">
+    <state width="1899" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1611220317065" />
+    <state width="1899" height="285" key="GridCell.Tab.0.left" timestamp="1611220317065">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1611218471861" />
-    <state width="1899" height="285" key="GridCell.Tab.0.right" timestamp="1611218471862">
+    <state width="1899" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1611220317065" />
+    <state width="1899" height="285" key="GridCell.Tab.0.right" timestamp="1611220317065">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1611218471862" />
+    <state width="1899" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1611220317065" />
     <state width="1899" height="352" key="GridCell.Tab.1.bottom" timestamp="1611217658793">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
