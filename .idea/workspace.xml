@@ -21,12 +21,18 @@
   <component name="ChangeListManager">
     <list default="true" id="2edaf840-d748-4db6-b06f-b930afda62fb" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuantumultX.conf" beforeDir="false" afterPath="$PROJECT_DIR$/QuantumultX.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,7 +63,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610699476868</updated>
-      <workItem from="1610699477947" duration="4362000" />
+      <workItem from="1610699477947" duration="4983000" />
+      <workItem from="1610934293599" duration="3036000" />
+      <workItem from="1611195235224" duration="8665000" />
     </task>
     <servers />
   </component>
@@ -74,6 +82,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1610699552854">
