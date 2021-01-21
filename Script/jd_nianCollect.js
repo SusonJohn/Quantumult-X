@@ -73,10 +73,11 @@ const JD_API = `https://api.m.jd.com`;
 
 async function getCoin() {
     return new Promise((resolve) => {
-        let body = {"eventType":"HOUR_BENEFIT"}
+        let body = '{"eventType":"HOUR_BENEFIT"}'
         let appid = 'crazy_joy'
         let functionId = 'crazyJoy_event_obtaimAward'
-        $.get({url:JD_API + '?body=' + body + '&appid=' + appid + '&functionId=' functionId }, (err, resp, data) => {
+        console.log(JD_API + '?body=' + body + '&appid=' + appid + '&functionId='+ functionId)
+        $.get({url:JD_API + '?body=' + body + '&appid=' + appid + '&functionId='+ functionId }, (err, resp, data) => {
             try {
                 if (err) {
                     console.log(`${JSON.stringify(err)}`)
