@@ -19,7 +19,6 @@ cron "0 0/30 * * * ?" script-path=https://github.com/q10539670/Quantumult-X/blob
 京东收金币 = type=cron,script-path=https://github.com/q10539670/Quantumult-X/blob/main/Script/jd_crazyJoyCollect.js, cronexpr="0 0/30 * * * ?", timeout=3600, enable=true
  */
 
-
 const $ = new Env('京东CazyJoy领币');
 //Node.js用户请在jdCookie.js处填写京东ck;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';

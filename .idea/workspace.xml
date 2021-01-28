@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2edaf840-d748-4db6-b06f-b930afda62fb" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumultX.conf" beforeDir="false" afterPath="$PROJECT_DIR$/QuantumultX.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Script/jd_crazyJoyCollect.js" beforeDir="false" afterPath="$PROJECT_DIR$/Script/jd_crazyJoyCollect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpCode.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpCode.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +48,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jd_scripts-master" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -75,7 +78,11 @@
       <updated>1610699476868</updated>
       <workItem from="1610699477947" duration="4983000" />
       <workItem from="1610934293599" duration="3036000" />
-      <workItem from="1611195235224" duration="20184000" />
+      <workItem from="1611195235224" duration="23036000" />
+      <workItem from="1611729954638" duration="1116000" />
+      <workItem from="1611731099690" duration="1053000" />
+      <workItem from="1611732178961" duration="603000" />
+      <workItem from="1611801224884" duration="1764000" />
     </task>
     <servers />
   </component>
@@ -95,10 +102,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1610699552854">
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1611729963587">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1610699552854" />
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1611729963587" />
     <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1611220317065">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
